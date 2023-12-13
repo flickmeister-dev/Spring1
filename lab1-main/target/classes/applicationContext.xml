@@ -1,0 +1,28 @@
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Body Bean -->
+    <bean id="body" class="com.example.lab1.details.Body">
+        <constructor-arg value="1"/> <!-- height -->
+        <constructor-arg value="2"/> <!-- width -->
+    </bean>
+
+    <!-- Engine Bean -->
+    <bean id="engine" class="com.example.lab1.details.Engine">
+        <constructor-arg value="Inline-4"/> <!-- type -->
+        <constructor-arg value="4"/> <!-- cylinders -->
+        <constructor-arg value="1000"/> <!-- displacement -->
+    </bean>
+
+    <!-- Seat Bean -->
+    <bean id="seat" class="com.example.lab1.details.Seat">
+        <constructor-arg value="2"/> <!-- seat -->
+    </bean>
+
+    <!-- Wheels Bean -->
+    <bean id="wheels" class="com.example.lab1.details.Wheels"/>
+
+</beans>
